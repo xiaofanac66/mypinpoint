@@ -1,6 +1,6 @@
 package com.sf;
 
-import com.sf.core.MyTransformer;
+import com.sf.classtransformer.MyTransformer;
 
 import java.lang.instrument.Instrumentation;
 

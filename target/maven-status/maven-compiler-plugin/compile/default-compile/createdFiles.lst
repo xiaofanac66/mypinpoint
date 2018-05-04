@@ -1,6 +1,4 @@
-com/sf/plugins/trace/Trace$Span.class
-com/sf/core/MyTransformer$MyClassClassVisitor.class
-com/sf/plugins/trace/Trace.class
 com/sf/plugins/threadlocal/ThreadLocalPlugin.class
-com/sf/core/MyTransformer.class
+com/sf/aop/AopInterceptor$Span.class
+com/sf/aop/AopInterceptor.class
 com/sf/AgentMain.class
