@@ -43,22 +43,6 @@ public class MyTransformer implements ClassFileTransformer {
 
                     public void visitCode() {
                         super.visitCode();
-//                        int paramSize = getParamSize(desc);
-//                        mv.visitIntInsn(BIPUSH,paramSize);
-//                        mv.visitTypeInsn(ANEWARRAY, Type.getInternalName(Object.class));
-//                        mv.visitInsn(DUP);
-//                        mv.visitInsn(ICONST_0);
-//                        mv.visitLdcInsn(name);
-//                        mv.visitInsn(AASTORE);
-//                        mv.visitInsn(DUP);
-//                        mv.visitInsn(ICONST_1);
-//                        mv.visitVarInsn(ALOAD,1);
-//                        mv.visitInsn(AASTORE);
-//                        mv.visitInsn(DUP);
-//                        mv.visitInsn(ICONST_2);
-//                        mv.visitVarInsn(ALOAD,2);
-//                        mv.visitInsn(AASTORE);
-//                        mv.visitMethodInsn(INVOKESTATIC, "com/sf/plugins/aop/AopInterceptor", "beforeInvoke", "([Ljava/lang/Object;)V",false);
                         invokeStatic(mv,desc,name);
                     }
                     public void visitInsn(int opcode) {
@@ -67,11 +51,6 @@ public class MyTransformer implements ClassFileTransformer {
                         }
                         mv.visitInsn(opcode);
                     }
-
-//                    public void visitMaxs(int maxStack,int maxLocals){
-//                        System.out.println("maaaaaaa");
-//                        mv.visitMaxs(Math.max(EXCEPTION_STACK,maxStack), maxLocals);
-//                    }
                 };
             }
         }, 0);
